@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Quotes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome-screen" class="container">
+        <h1>Welcome to Daily Quotes</h1>
+        <h3>A fresh dose of wisdom every day!</h3>
+        <button class="button" onclick="startQuotes()">Start</button>
+    </div>
+    
+    <div id="quote-screen" class="container" style="display: none;">
+        <p id="quote-text"></p>
+        <p id="quote-author"></p>
+        <div class="button-container">
+            <button class="button" onclick="prevQuote()">&#8592; Previous</button>
+            <button class="button" onclick="nextQuote()">Next &#8594;</button>
+            <button class="button exit-button" onclick="exitToHome()">Exit</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

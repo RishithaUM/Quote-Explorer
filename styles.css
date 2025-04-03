@@ -1,0 +1,72 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background 2s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
+
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 230px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    animation: fadeIn 2s ease-in-out;
+  
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.button {
+    padding: 12px 25px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    background: linear-gradient(135deg, #b187df, #e6afd9);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.button:hover {
+    background: linear-gradient(135deg,  #e6afd9, #6a11cb);
+    transform: translateY(-2px);
+}
+.exit-button {
+    background: linear-gradient(135deg,#b187df, #e6afd9);
+}
+.exit-button:hover {
+    background: linear-gradient(135deg, #e6afd9, #6a11cb);
+}
+#quote-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+#quote-author {
+    font-size: 22px;
+    font-style: italic;
+    color: #555;
+}
+#quote-screen {
+    display: none;
+}
